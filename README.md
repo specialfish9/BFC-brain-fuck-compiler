@@ -11,7 +11,7 @@ BFC brain fuck compiler by Mattia Girolimetto
     
 	Options:
  	
-	-h (--help): Get help" << endl << endl;
+	-h [--help]: Get help
 
 	You can get more info at: https://github.com/specialfish9/BFC-brain-fuck-compiler
 
