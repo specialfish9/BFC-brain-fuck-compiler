@@ -122,12 +122,12 @@ void read_and_exec(char* file_name){
 }
 
 void print_help(){
-    cout << "\tBFC by Mattia Girolimetto!" << endl << endl << endl;
+    cout << "\tBFI by Mattia Girolimetto!" << endl << endl << endl;
     cout << "\tUsage:" << endl;
     cout << "\tbfc <file_name>" << endl << endl;
     cout << "\tOptions:" << endl;
     cout << "\t-h (--help): Get help" << endl << endl;
-    cout << "\tYou can get more info at: https://github.com/specialfish9/BFC-brain-fuck-compiler" << endl;
+    cout << "\tYou can get more info at: https://github.com/specialfish9/BFC-brain-fuck-interpreter" << endl;
 }
 
 void file_not_found(char *file_name){
