@@ -1,18 +1,18 @@
-# BFC-brain-fuck-compiler
-BFC brain fuck compiler by Mattia Girolimetto
+# BFC-brain-fuck-interpreter
+BFC brain fuck interpreter by Mattia Girolimetto
 
 ```
-	BFC by Mattia Girolimetto!
+	BFI by Mattia Girolimetto!
 
 
 	Usage:
     	
-	bfc <file_name>
+	bfi <file_name>
     
 	Options:
  	
 	-h [--help]: Get help
 
-	You can get more info at: https://github.com/specialfish9/BFC-brain-fuck-compiler
+	You can get more info at: https://github.com/specialfish9/BFC-brain-fuck-interpreter
 
 ```
