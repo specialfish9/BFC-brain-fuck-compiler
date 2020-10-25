@@ -1,5 +1,5 @@
-# BFC-brain-fuck-interpreter
-BFC brain fuck interpreter by Mattia Girolimetto
+# BFI-brain-fuck-interpreter
+BFI brain fuck interpreter by Mattia Girolimetto
 
 ```
 	BFI by Mattia Girolimetto!
