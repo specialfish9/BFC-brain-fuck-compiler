@@ -1,8 +1,8 @@
 # BFI-brain-fuck-interpreter
-BFI brain fuck interpreter by Mattia Girolimetto
+BFI brain fuck interpreter 
 
 ```
-	BFI by Mattia Girolimetto!
+	BFI 
 
 
 	Usage:

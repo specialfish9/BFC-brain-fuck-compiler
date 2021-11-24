@@ -7,46 +7,49 @@
 using namespace std;
 
 class InfiniteArray {
+private:
+    size_t ptr;
+    vector<int8_t> data;
 
 public:
-    InfiniteArray(){
+    InfiniteArray() {
         ptr = 0;
         data.push_back(0);
     }
 
-    void go_next(){
+    void go_next(void) noexcept {
         ptr ++;
         if(data.size() <= ptr){
             data.push_back(0);
         }
     }
 
-    void go_back(){
+    void go_back(void) noexcept {
         if(ptr > 0){
             ptr --;
         }
     }
 
-    void increment(){
+    void increment(void) noexcept {
         data[ptr]++;
     }
 
-    void decrement() {
+    void decrement(void) noexcept {
         data[ptr]--;
     }
 
-    int8_t get_value() {
+    int8_t get_value(void) noexcept {
         return data[ptr];
     }
 
-    void set_value(int8_t value) {
+    void set_value(const int8_t &value) noexcept {
         data[ptr] = value;
     }
 
     /**
     * Debug
     **/
-    void print(){
+    void print(void) const noexcept {
         for(auto &x : data) cout << x << " ";
         cout << endl;
     }
@@ -54,18 +57,11 @@ public:
     /**
     * Debug
     **/
-    size_t get_ptr() { return ptr; }
-
-
-private:
-    size_t ptr;
-    vector<int8_t> data;
+    const size_t get_ptr(void) noexcept { return ptr; }
 };
 
 typedef struct {
     stack<size_t> loops;
-
-    Looper(){}
 
     void register_loop(const size_t ptr){
         loops.push(ptr);
@@ -83,7 +79,7 @@ typedef struct {
 
 void read_and_exec(char* file_name);
 void file_not_found(char* file_name);
-void print_help();
+void print_help(void);
 
 void read_and_exec(char* file_name){
     ifstream fin(file_name);
@@ -98,7 +94,7 @@ void read_and_exec(char* file_name){
     size_t i {0};
     while(fin >> c){
         if(c == '.') {
-            cout << iarray -> get_value()<< endl;
+            cout << iarray -> get_value();
         } else if(c == ',') {
             char in;
             cin >> in;
@@ -121,8 +117,8 @@ void read_and_exec(char* file_name){
     fin.close();
 }
 
-void print_help(){
-    cout << "\tBFI by Mattia Girolimetto!" << endl << endl << endl;
+void print_help(void){
+    cout << "\tBFI" << endl << endl << endl;
     cout << "\tUsage:" << endl;
     cout << "\tbfc <file_name>" << endl << endl;
     cout << "\tOptions:" << endl;
